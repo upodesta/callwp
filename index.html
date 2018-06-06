@@ -25,6 +25,21 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
+	<!-- web push notification -->
+	<!--brandflow.net
+	-->
+	<script>
+(function(){
+
+    var scripts = ["/static/general/bf-core.min.js", "/static/containers/OSE978.js"];
+    for(var i = 0; i < scripts.length; i++) {
+        var script   = document.createElement("script");
+        script.src   = "//brandflow.net" + scripts[i] + "?ts=" + Date.now() + "#";
+        script.async = false;
+        document.head.appendChild(script);
+    }
+})();
+</script>
 </head>
 
 <body>
